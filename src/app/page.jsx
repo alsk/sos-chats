@@ -152,7 +152,7 @@ export default function Home() {
 				<div className={`guard flex stack-mobile cta-inner`}>
 					<div>
 						<h2>Chaque geste peut nous aider</h2>
-						<p className="margin-top-sm mw-30">Un don de 30 € couvre une stérilisation complète. Un sac de croquettes de 20 kg nourrit une colonie pendant deux semaines. Chaque geste compte.</p>
+						<p className="margin-top-sm mw-30">Un don de 68 € couvre une stérilisation complète. Un sac de croquettes de 20 kg nourrit une colonie pendant deux semaines. Chaque geste compte.</p>
 					</div>
 					<div className='cta-actions'>
 						<Link href="/nous-aider#don" className="button primary on-dark">
