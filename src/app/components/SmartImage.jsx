@@ -13,9 +13,9 @@ export default function OptimizedImage({ src, alt, ...props }) {
 
 	return (
 		<picture>
-			<source srcSet={`/optimized/${cleanPath}.avif`} type="image/avif" />
-			<source srcSet={`/optimized/${cleanPath}.webp`} type="image/webp" />
-			<img src={`/optimized/${cleanPath}.jpg`} alt={alt} {...props} />
+			<source srcSet={`${basePath}/optimized/${cleanPath}.avif`} type="image/avif" />
+			<source srcSet={`${basePath}/optimized/${cleanPath}.webp`} type="image/webp" />
+			<img src={`${basePath}/optimized/${cleanPath}.jpg`} alt={alt} {...props} />
 		</picture>
 
 		// <picture>
