@@ -16,8 +16,8 @@ export const metadata = {
 const team = [
 	{ role: "Présidente", name: "Annie Pouget" },
 	{ role: "Vice-présidente", name: "Nicole Sauvat" },
-	{ role: "Trésorier", name: "Louis Chevillon" },
-	{ role: "Secrétaire", name: "Marie-Laure Combes" },
+	{ role: "Trésorière", name: "Joelle Audignon" },
+	{ role: "Secrétaire", name: "Louis Chevillon" },
 ];
 
 export default function Contact() {
