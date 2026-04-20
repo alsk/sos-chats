@@ -37,7 +37,7 @@ export default function Contact() {
 			</section>
 
 			<section className="section">
-				<div className="guard">
+				<div className="guard margin-bottom-md">
 					<div className={styles.grid}>
 						<div className={styles.card}>
 							<h3 className={styles.cardTitle}>Téléphone</h3>
@@ -57,9 +57,7 @@ export default function Contact() {
 							<address className={styles.address}>
 								SOS Chats Haute-Dordogne
 								<br />
-								BP 21
-								<br />
-								63150 La Bourboule
+								BP 21, 63150 La Bourboule
 							</address>
 							<p className={styles.note}>Les chèques sont à libeller à l&apos;ordre de « SOS Chats Haute-Dordogne ».</p>
 						</div>
@@ -77,8 +75,8 @@ export default function Contact() {
 			</section>
 
 			<section className={`section bg-cream-soft ${styles.team}`}>
-				<div className="guard">
-					<div className="mw-40 margin-bottom-lg">
+				<div className="guard margin-bottom-md">
+					<div className="mw-40 margin-bottom-md">
 						<span className="supertitle">Le bureau</span>
 						<h2>Celles et ceux qui font tenir l&apos;association.</h2>
 					</div>
