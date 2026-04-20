@@ -191,6 +191,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .pillarList{
+    flex-direction: column;
+    gap: 0;
+  }
+
   .pillar {
     grid-template-columns: 1fr;
     gap: 12px;

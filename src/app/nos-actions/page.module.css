@@ -96,7 +96,7 @@
 @media (max-width: 860px) {
   .chapter {
     gap: 20px;
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 40px 0;
   }
 
