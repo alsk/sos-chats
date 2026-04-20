@@ -91,7 +91,7 @@
 
 .statCard {
   /* background: var(--ink); */
-  background: #332315;
+  background: #37281c;
   padding: 40px 28px;
   display: flex;
   flex-direction: column;
@@ -124,17 +124,18 @@
 /* Pillars */
 .pillarList {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  /* flex-direction: column; */
+  gap: 1.4rem;
   border-top: 1px solid var(--border);
 }
 
 .pillar {
   display: flex;
+  flex-direction: column;
   /* grid-template-columns: 120px 1fr; */
-  gap: 40px;
+  gap: 1rem;
   padding: 36px 0;
-  border-bottom: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
 }
 
 .pillar img{
@@ -169,24 +170,7 @@
   color: var(--terracotta-dark);
 }
 
-/* CTA */
-.cta {
-  padding: 96px 0;
-}
 
-.ctaInner {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.ctaActions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
-}
 
 /* Responsive */
 @media (max-width: 960px) {

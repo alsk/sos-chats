@@ -25,6 +25,9 @@ export default function Contact() {
 		<>
 			<section className="page-head">
 				<div className="guard">
+					<div className="logo-simple">
+						<img src={`${basePath}/assets/logo-simple.svg`} alt="" />
+					</div>
 					<span className="supertitle">Contact</span>
 					<h1>Parlons-en.</h1>
 					<p className="mw-40 margin-top-sm">

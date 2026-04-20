@@ -70,9 +70,9 @@ export default function Nav(props) {
                 <div className="nav-content guard">
                     {/* <a href="./#" className="logo" onClick={()=>{setIsMobileNavOpened(false)}}><img src="./assets/logo.svg"></img></a> */}
 
-                    <Link href="/" className="logo" aria-label="SOS Chats Haute-Dordogne, accueil">
-                        <img src={`${basePath}/assets/logo.svg`} alt="" />
-                    </Link>
+                    {/* <Link href="/" className="logo" aria-label="SOS Chats Haute-Dordogne, accueil">
+                        <img src={`${basePath}/assets/logo-simple.svg`} alt="" />
+                    </Link> */}
 
                     <div className="links" onClick={()=>{setIsMobileNavOpened(false)}}>
                         <Link href="/" className={pathname === "/" ? "active" : ""}>Accueil</Link>

@@ -45,7 +45,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${fraunces.variable}`} data-scroll-behavior="smooth">
       <body>
         <Header />
         <main>{children}</main>

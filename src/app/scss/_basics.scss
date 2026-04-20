@@ -10,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 h1,
 h2,
 h3,
@@ -104,7 +105,7 @@ strong {
 
 .supertitle {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--terracotta);
@@ -214,6 +215,10 @@ strong {
     align-items: flex-start;
   }
 
+  &.justify-center{
+    justify-content: center;
+  }
+
   @media (max-width: $tabletBreakpoint) {
     &.stack-mobile {
       flex-direction: column;
@@ -271,9 +276,13 @@ strong {
 
 .page-head {
   padding: 80px 0 64px;
-  padding-top: 12rem;
+  padding-top: 10rem;
   background: linear-gradient(180deg, var(--cream-soft) 0%, var(--cream) 100%);
   border-bottom: 1px solid var(--border-soft);
+
+  &.hero{
+    padding-top: 12rem;
+  }
 }
 
 /* Text utilities */

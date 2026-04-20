@@ -73,6 +73,9 @@ export default function Aider() {
     <>
       <section className="page-head">
         <div className="guard">
+          <div className="logo-simple">
+						<img src={`${basePath}/assets/logo-simple.svg`} alt="" />
+					</div>
           <span className="supertitle">Nous aider</span>
           <h1 className={`mw-50 ${styles.headTitle}`}>
             Chaque geste, <em>même petit</em>, change une vie féline.

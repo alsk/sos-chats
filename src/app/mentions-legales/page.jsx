@@ -24,7 +24,7 @@ export default function Legal() {
 
                 .legal-content a {display: inline;}
                 .legal-content ul {margin-left: 0.8rem;}
-                .legal-content ul li {line-height: 130%; list-style:disc; font-size:1rem; margin: 0.3rem 0;}
+                .legal-content ul li {line-height: 150%; list-style:disc; font-size:1.1rem; margin: 0.3rem 0;}
                 .legal-content .heading { font-size: 20px; line-height:140%; margin-top: 4rem; text-transform: uppercase;}
 
                 .legal-content .logo{
@@ -34,12 +34,16 @@ export default function Legal() {
                     margin-bottom: 6rem;
                 }
 
-                .url:after{ content: 'www..fr';}
-                .company:after{ content: 'Association des Chasseurs du Pays de Sarrebourg';}
-                .address:after{ content: '57260 VAL DE BRIDE';}
-                .phone:after{ content: '06.24.28.78.07';}
-                .email:after{ content: 'lalaixieres' '@' 'yahoo' '.fr';}
-                .hosting:after{ content: 'OVH';}
+                h5{
+                    margin-bottom: 0.6rem;
+                }
+
+                .url:after{ content: 'www.sos-chats-haute-dordogne.fr';}
+                .company:after{ content: 'SOS Chats Haute-Dordogne';}
+                .address:after{ content: '63150 LA BOURBOULE';}
+                .phone:after{ content: '04 73 21 10 81';}
+                .email:after{ content: 'mapouget' '@' 'wanadoo' '.fr';}
+                .hosting:after{ content: 'Github';}
 
             `}
         </style>
@@ -60,7 +64,6 @@ export default function Legal() {
                 <p>Le présent site <span className="url"></span> (ci-après « le Site ») est édité par <span className="company"></span>. Établissement principal : <span className="address"></span>.</p>
                 {/* <p>Tél. : <span className="phone"></span></p> */}
                 <p>Email : <span className="email"></span></p>
-                <p>Conception / réalisation du site : <a href="https://agence-berlioz.com/" target="_blank">Agence Berlioz</a></p>
                 <p>Hébergeur du site : <span className="hosting"></span></p>
 
 
@@ -101,9 +104,6 @@ export default function Legal() {
 
 
         </div>
-
-
-        <Footer />
 
 
         </>

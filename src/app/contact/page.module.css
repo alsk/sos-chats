@@ -57,12 +57,7 @@
   color: var(--ink);
 }
 
-.note {
-  font-size: 0.9rem;
-  color: var(--ink-muted);
-  font-style: italic;
-  margin-top: auto;
-}
+
 
 .team {
   border-top: 1px solid var(--border-soft);

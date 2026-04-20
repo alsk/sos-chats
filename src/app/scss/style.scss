@@ -33,14 +33,50 @@
 
 
 .pillar-img--wrap{
-	max-width: 15rem;
-	aspect-ratio: 1/1;
+	// max-width: 20rem;
+	height: fit-content;
+	// aspect-ratio: 1/1;
 	overflow: hidden;
-	border-radius: 0.4rem;
+
+	img{
+		width: 100%;
+		border-radius: 0.4rem;
+	}
  }
  
 
 
-#don {
+#don{
 	scroll-margin-top: 100px;
+}
+
+
+.logo-simple{
+	max-width: 4rem;
+	margin-bottom: 1rem;
+}
+
+.note {
+	font-size: 0.9rem;
+	color: var(--ink-muted);
+	font-style: italic;
+	margin-top: auto;
+ }
+ 
+
+
+ /* CTA */
+.cta {
+  padding: 96px 0;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
 }
