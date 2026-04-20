@@ -29,21 +29,21 @@ const stats = [
 const pillars = [
   {
     number: "01",
-    img: '/img/food.jpg',
+    img: 'img/food.jpg',
     title: "Piégeage et capture",
     body:
       "Patiemment, pendant plusieurs jours, nos bénévoles habituent les chats à un point de nourrissage avant de poser le piège. Un travail de longue haleine qui exige confiance et régularité.",
   },
   {
     number: "02",
-    img: '/img/vet-2.jpg',
+    img: 'img/vet-2.jpg',
     title: "Stérilisation vétérinaire",
     body:
       "Chaque chat capturé est conduit chez un vétérinaire partenaire pour être stérilisé, testé et identifié. Les chats non adoptables retrouvent leur territoire ; les autres sont proposés à l'adoption.",
   },
   {
     number: "03",
-    img: '/img/food.jpg',
+    img: 'img/food.jpg',
     title: "Nourrissage et veille",
     body:
       "Nos bénévoles nourrissent quotidiennement environ 140 chats sur le territoire, avec l'aide de donateurs et de particuliers qui construisent parfois eux-mêmes des abris.",
@@ -61,7 +61,7 @@ export default function Home() {
             </span> */}
 
             <div className="hero-logo">
-              <img src="/assets/logo.svg" alt="" />
+              <img src="assets/logo.svg" alt="" />
             </div>
 
 				    {/* <h3>SOS Chats Haute-Dordogne</h3> */}
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </div>
 			<div>
-				<img src="/img/hero.jpg" alt="" />
+				<img src="img/hero.jpg" alt="" />
 			</div>
         </div>
       </section>
