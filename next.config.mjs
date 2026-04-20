@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true, // recommended for static hosts
-  images: { unoptimized: true }, // Next.js image optimization needs a server
+  trailingSlash: true,
+  images: { unoptimized: true },
+  basePath: '/sos-chats',
+  assetPrefix: '/sos-chats',
 };
 
 export default nextConfig;
