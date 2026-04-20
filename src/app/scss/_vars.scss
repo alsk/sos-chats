@@ -1,0 +1,29 @@
+$mobileBreakpoint: 760px;
+$tabletBreakpoint: 960px;
+
+:root {
+  --cream: #fdf7ef;
+  --cream-soft: #faeedd;
+  --paper: #ffffff;
+  --ink: #2a1b0e;
+  --ink-soft: #5a4433;
+  --ink-muted: #8a7361;
+  --terracotta: #b54914;
+  --terracotta-dark: #8f3709;
+  --sage: #476a4e;
+  --sage-soft: #e7ede3;
+  --gold: #c78320;
+  --border: #ead9c2;
+  --border-soft: #f2e6d3;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-sm: 0 1px 2px rgba(42, 27, 14, 0.06);
+  --shadow-md: 0 8px 24px -12px rgba(42, 27, 14, 0.18);
+  --shadow-lg: 0 24px 60px -24px rgba(42, 27, 14, 0.25);
+
+  --guard: 1120px;
+  --guardPadding: 24px;
+}

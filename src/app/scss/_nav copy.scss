@@ -1,0 +1,122 @@
+@use './vars' as *;
+
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: rgba(253, 247, 239, 1);
+  // backdrop-filter: saturate(180%) blur(10px);
+  // -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border-soft);
+
+  .nav-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    gap: 24px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ink);
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--terracotta);
+      color: var(--cream);
+      box-shadow: var(--shadow-sm);
+
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+
+      .brand-title {
+        font-family: var(--font-serif);
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+      .brand-region {
+        font-size: 0.78rem;
+        color: var(--ink-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a {
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      transition: background 0.2s, color 0.2s;
+
+      &:hover {
+        background: var(--cream-soft);
+        color: var(--ink);
+      }
+
+      &.cta {
+        margin-left: 8px;
+        padding: 10px 18px;
+        background: var(--terracotta);
+        color: var(--cream);
+        font-weight: 500;
+
+        &:hover {
+          background: var(--terracotta-dark);
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}
+
+.nav-logo {
+  width: 100%;
+  max-width: 5rem;
+}
+
+@media (max-width: $mobileBreakpoint) {
+  .nav {
+    .brand .brand-text .brand-region {
+      display: none;
+    }
+
+    .links a:not(.cta) {
+      display: none;
+    }
+
+    .links a.cta {
+      padding: 9px 14px;
+      font-size: 0.85rem;
+    }
+  }
+}
