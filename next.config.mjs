@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-const path = ''
-// const path = '/sos-chats'
+
+const path = process.env.NODE_ENV === 'production' ? '/sos-chats' : ''
 
 const nextConfig = {
   output: 'export',
