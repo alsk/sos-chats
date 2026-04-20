@@ -214,7 +214,7 @@ nav{
 	width: var(--burgerWidth);
 	height: var(--burgerHeight);
 	cursor: pointer;
-	z-index: 3000;
+	z-index: 100000;
 	mix-blend-mode: difference;
 
 	>div, &:before, &:after{
