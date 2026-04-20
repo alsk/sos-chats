@@ -1,4 +1,5 @@
 const basePath = process.env.__NEXT_ROUTER_BASEPATH || "";
+import path from "path";
 
 export default function OptimizedImage({ src, alt, ...props }) {
 	const isDev = process.env.NODE_ENV === "development";
@@ -10,7 +11,7 @@ export default function OptimizedImage({ src, alt, ...props }) {
 	}
 
 	const cleanPath = src.replace(/^\/?img\//, "").replace(/\.[^/.]+$/, "");
-	const fileName = src.basename("/img/food.jpg", path.extname("/img/food.jpg"))
+	const fileName = path.basename(src, path.extname(src));
 
 	return (
 		<picture>
