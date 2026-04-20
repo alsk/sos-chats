@@ -1,5 +1,12 @@
 import styles from "./page.module.css";
+import SmartImage from "@/app/components/SmartImage";
 import ProtectedEmail from "@/app/components/ProtectedEmail";
+
+
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+
+
+
 
 export const metadata = {
 	title: "Contact",

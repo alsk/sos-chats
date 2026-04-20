@@ -1,6 +1,13 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
+
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+
+
+
+
+
 export const metadata = {
   title: "Nous aider",
   description:

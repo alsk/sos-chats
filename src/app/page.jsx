@@ -1,6 +1,10 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+
+
+
 const missions = [
   {
     title: "Stériliser",
@@ -61,7 +65,7 @@ export default function Home() {
             </span> */}
 
             <div className="hero-logo">
-              <img src="assets/logo.svg" alt="" />
+              <img src={`${basePath}/assets/logo.svg`} alt="" />
             </div>
 
 				    {/* <h3>SOS Chats Haute-Dordogne</h3> */}

@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
+const path = ''
+// const path = '/sos-chats'
+
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
   images: { unoptimized: true },
-  basePath: '/sos-chats',
-  assetPrefix: '/sos-chats',
+  basePath: path,
+  assetPrefix: path,
 };
 
 export default nextConfig;

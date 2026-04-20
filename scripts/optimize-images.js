@@ -1,25 +1,46 @@
-const sharp = require('sharp')
-const fs = require('fs')
-const path = require('path')
+const sharp = require("sharp");
+const fs = require("fs");
+const path = require("path");
 
-const dirs = ['./public/img', './public/assets']
+const inputDir = "./public/img";
+const outputDir = "./public/optimized";
 
-dirs.forEach(dir => {
-  if (!fs.existsSync(dir)) return
+if (!fs.existsSync(outputDir)) {
+	fs.mkdirSync(outputDir, { recursive: true });
+}
 
-  fs.readdirSync(dir).forEach(file => {
-    if (!file.match(/\.(jpg|jpeg|png)$/)) return
+fs.readdirSync(inputDir).forEach(async (file) => {
+	if (!file.match(/\.(jpg|jpeg|png)$/)) return;
 
-    const inputPath = path.join(dir, file)
-    const outputPath = path.join(dir, file)
-    const tempPath = path.join(dir, `_temp_${file}`)
+	const inputPath = path.join(inputDir, file);
+	const cleanName = file.replace(/\.[^/.]+$/, "");
 
-    sharp(inputPath)
-      .resize(1920, null, { withoutEnlargement: true })
-      .jpeg({ quality: 80, progressive: true })
-      .toFile(tempPath, () => {
-        fs.renameSync(tempPath, outputPath)
-        console.log(`✓ ${file}`)
-      })
-  })
-})
+	try {
+		const metadata = await sharp(inputPath).metadata();
+		const isPortrait = metadata.height > metadata.width;
+		const resizeOptions = [
+			isPortrait ? null : 1000,
+			isPortrait ? 1000 : null,
+			{ withoutEnlargement: true },
+		];
+
+		await sharp(inputPath)
+			.resize(...resizeOptions)
+			.avif({ quality: 70 })
+			.toFile(path.join(outputDir, `${cleanName}.avif`));
+
+		await sharp(inputPath)
+			.resize(...resizeOptions)
+			.webp({ quality: 70 })
+			.toFile(path.join(outputDir, `${cleanName}.webp`));
+
+		await sharp(inputPath)
+			.resize(...resizeOptions)
+			.jpeg({ quality: 70, progressive: true })
+			.toFile(path.join(outputDir, `${cleanName}.jpg`));
+
+		console.log(`✓ ${file}`);
+	} catch (err) {
+		console.error(`✗ ${file}:`, err.message);
+	}
+});

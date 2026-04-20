@@ -1,5 +1,7 @@
 "use client";
 
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -69,7 +71,7 @@ export default function Nav(props) {
                     {/* <a href="./#" className="logo" onClick={()=>{setIsMobileNavOpened(false)}}><img src="./assets/logo.svg"></img></a> */}
 
                     <Link href="/" className="logo" aria-label="SOS Chats Haute-Dordogne, accueil">
-                        <img src="/assets/logo.png" alt="" />
+                        <img src={`${basePath}/assets/logo.svg`} alt="" />
                     </Link>
 
                     <div className="links" onClick={()=>{setIsMobileNavOpened(false)}}>
