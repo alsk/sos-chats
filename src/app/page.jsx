@@ -1,6 +1,9 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
+import SmartImage from "@/app/components/SmartImage";
+
+
 const basePath = process.env.__NEXT_ROUTER_BASEPATH || "";
 
 const missions = [
@@ -56,7 +59,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div>
-						<img src="img/hero.jpg" alt="" />
+						<SmartImage src={`${basePath}/img/hero.jpg`} />
 					</div>
 				</div>
 			</section>
@@ -105,7 +108,7 @@ export default function Home() {
 					<div className={styles.pillarList}>
 						<article className={styles.pillar}>
 							<div className="pillar-img--wrap">
-								<img src={`${basePath}/img/stray.jpg`} alt="" />
+								<SmartImage src={`${basePath}/img/stray.jpg`} />
 							</div>
 							<div>
 								{/* <div className={styles.pillarNumber}>1</div> */}
@@ -118,7 +121,7 @@ export default function Home() {
 						</article>
 						<article className={styles.pillar}>
 							<div className="pillar-img--wrap">
-								<img src={`${basePath}/img/vet.jpg`} alt="" />
+								<SmartImage src={`${basePath}/img/vet.jpg`} />
 							</div>
 							<div>
 								{/* <div className={styles.pillarNumber}>2</div> */}
@@ -128,7 +131,7 @@ export default function Home() {
 						</article>
 						<article className={styles.pillar}>
 							<div className="pillar-img--wrap">
-								<img src={`${basePath}/img/homeplace-2.jpg`} alt="" />
+								<SmartImage src={`${basePath}/img/homeplace-2.jpg`} />
 							</div>
 							<div>
 								{/* <div className={styles.pillarNumber}>3</div> */}
