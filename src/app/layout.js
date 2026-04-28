@@ -43,7 +43,7 @@ export const metadata = {
   openGraph: {
     title: "SOS Chats Haute-Dordogne",
     description:
-      `${new Date().getFullYear() - 2003} ans au service des chats errants : stérilisation, soins, placement et lutte contre la maltraitance.`,
+      `${new Date().getFullYear() - 2004} ans au service des chats errants : stérilisation, soins, placement et lutte contre la maltraitance.`,
     type: "website",
     locale: "fr_FR",
   },
@@ -53,12 +53,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${inter.variable} ${fraunces.variable}`} data-scroll-behavior="smooth">
       <head>
-        <Script
+        {/* <Script
           async
           data-domain="sos-chats-haute-dordogne.fr"
           src="https://plausible.io/js/pa-6clx19siYp8S59ERoCif-.js"
-        />
-        {/* <PlausibleProvider src="https://plausible.io/js/pa-6clx19siYp8S59ERoCif-.js" /> */}
+        /> */}
+        <PlausibleProvider src="https://plausible.io/js/pa-6clx19siYp8S59ERoCif-.js" />
       </head>
       <body>
         <Header />

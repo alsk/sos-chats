@@ -19,7 +19,7 @@ export default function Actions() {
 						<img src={`${basePath}/assets/logo-simple.svg`} alt="" />
 					</div>
 					<span className="supertitle">Nos actions</span>
-					<h1 className="mw-50">Un travail de terrain, chat par chat, depuis 2003.</h1>
+					<h1 className="mw-50">Un travail de terrain, chat par chat, depuis 2004.</h1>
 					<p className="mw-40 margin-top-sm">
 						Chaque chat aidé par l&apos;association suit le même chemin patient : piégeage, stérilisation, identification, soins, puis retour dans son territoire ou placement en famille. Voici
 						comment nous procédons concrètement.
