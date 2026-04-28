@@ -101,7 +101,7 @@ export default function Aider() {
               </span>
               <h3>Faire un don</h3>
               <p>
-              Chaque euro sert directement au terrain : stérilisations, croquettes, frais vétérinaires. Envoyez votre chèque à l'ordre de « SOS Chats Haute-Dordogne », SOS Chats Haute-Dordogne, Service Trésorerie, 63150 Murat-le-Quaire. Un reçu fiscal vous sera systématiquement envoyé. N'oubliez pas que votre don ouvre droit à 66% de réduction fiscale !
+              Chaque euro sert directement au terrain : stérilisations, croquettes, frais vétérinaires. Envoyez votre chèque à l'ordre de « SOS Chats Haute-Dordogne », SOS Chats Haute-Dordogne, Service Trésorerie, 63150 Murat-le-Quaire. Un reçu fiscal vous sera systématiquement envoyé. <span className={styles.highlight}>N'oubliez pas que votre don ouvre droit à 66% de réduction fiscale !</span>
               </p>
               <Link href="/contact" className={styles.cardLink}>
                 Nous contacter →
