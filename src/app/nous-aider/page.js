@@ -91,24 +91,62 @@ export default function Aider() {
       <section className="section">
         <div className="guard">
           <div className={styles.grid}>
-            {ways.map((w) => (
-              <article
-                id={w.id}
-                key={w.id}
-                className={`${styles.card} ${w.accent ? styles.cardAccent : ""}`}
-              >
-                <span className={styles.icon} aria-hidden="true">
-                  {w.icon}
-                </span>
-                <h3>{w.title}</h3>
-                <p>{w.body}</p>
-                {w.accent ? (
-                  <Link href="/contact" className={styles.cardLink}>
-                    Nous contacter →
-                  </Link>
-                ) : null}
-              </article>
-            ))}
+            <article
+              id="don"
+              key="don"
+              className={`${styles.card} ${styles.cardAccent}`}
+            >
+              <span className={styles.icon} aria-hidden="true">
+                €
+              </span>
+              <h3>Faire un don</h3>
+              <p>
+              Chaque euro sert directement au terrain : stérilisations, croquettes, frais vétérinaires. Envoyez votre chèque à l'ordre de « SOS Chats Haute-Dordogne », SOS Chats Haute-Dordogne, Service Trésorerie, 63150 Murat-le-Quaire. Un reçu fiscal vous sera systématiquement envoyé. N'oubliez pas que votre don ouvre droit à 66% de réduction fiscale !
+              </p>
+              <Link href="/contact" className={styles.cardLink}>
+                Nous contacter →
+              </Link>
+            </article>
+            <article
+              id="adherer"
+              key="adherer"
+              className={styles.card}
+            >
+              <span className={styles.icon} aria-hidden="true">
+              ✎
+              </span>
+              <h3>Adhérer à l’association</h3>
+              <p>
+              Devenir adhérent, c'est nous aider à peser auprès des communes et des partenaires. Nous demandons simplement votre adresse et, si possible, votre e-mail pour faciliter les échanges. Une participation de 30 € vous sera demandée. Si vos ressources ne le permettent pas, une participation moindre peut être acceptée. Un reçu fiscal vous sera délivré.
+              </p>
+            </article>
+            <article
+              id="nourrir"
+              key="nourrir"
+              className={styles.card}
+            >
+              <span className={styles.icon} aria-hidden="true">
+                🥣
+              </span>
+              <h3>Offrir des croquettes</h3>
+              <p>
+                Un sac de 20 kg nourrit une colonie pendant deux semaines. Vous pouvez aussi acheminer directement des croquettes à un point de collecte : <strong><Link href="/contact">contactez-nous</Link></strong> pour convenir d'un rendez-vous.
+              </p>
+            </article>
+            <article
+              id="benevolat"
+              key="benevolat"
+              className={styles.card}
+            >
+              <span className={styles.icon} aria-hidden="true">
+                ✋
+              </span>
+              <h3>Devenir bénévole</h3>
+              <p>
+                Piégeage, transports chez le vétérinaire, nourrissage : chaque paire de mains est précieuse. <strong><Link href="/contact">Contactez-nous</Link></strong> pour rejoindre notre équipe.
+              </p>
+            </article>
+       
           </div>
         </div>
       </section>

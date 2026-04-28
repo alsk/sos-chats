@@ -60,7 +60,7 @@ export default function Legal() {
                 <h1>Mentions légales</h1>
 
 
-                <p className="mw-40 margin-top-sm">Association régie par la loi 1901. Numéro de déclaration de création de l'association : 0632019933 au journal officiel du 19 février 2004.</p>
+                <p className="mw-40 margin-top-sm">Association régie par la loi 1901. Numéro de déclaration de création de l'association : 0632019933. Enregistrée au journal officiel du 19 février 2004.</p>
 
                 <h5 className="heading">Identification</h5>
                 <p>Le présent site <span className="url"></span> (ci-après « le Site ») est édité par <span className="company"></span>. Établissement principal : <span className="address"></span>.</p>

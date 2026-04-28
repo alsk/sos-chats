@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-about">
           <h3 className="footer-heading">SOS Chats Haute-Dordogne</h3>
           <p>
-            Association loi 1901 au service des chats errants du Puy-de-Dôme depuis 2003.
+            Association loi 1901 au service des chats errants du Puy-de-Dôme depuis 2004.
             Stérilisation, soins, placement et lutte contre la maltraitance animale.
           </p>
         </div>
@@ -16,7 +16,6 @@ export default function Footer() {
         <div>
           <h4 className="footer-subheading">Contact</h4>
           <ul className="footer-list">
-            <li>BP 21 — 63150 La Bourboule</li>
             <li>
               <a href="tel:+33473211081">04 73 21 10 81</a>
             </li>

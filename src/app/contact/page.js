@@ -63,7 +63,8 @@ export default function Contact() {
 								<br />
 								63150 Murat-le-Quaire
 							</address>
-							<p className={styles.note}>Les chèques sont à libeller à l&apos;ordre de « SOS Chats Haute-Dordogne ».</p>
+							<p className={styles.note}>Les chèques sont à libeller à l&apos;ordre de « <strong>SOS Chats Haute-Dordogne</strong> ».</p>
+		
 						</div>
 
 						<div className={styles.card}>

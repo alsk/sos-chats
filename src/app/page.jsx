@@ -121,22 +121,22 @@ export default function Home() {
 						</article>
 						<article className={styles.pillar}>
 							<div className="pillar-img--wrap">
-								<SmartImage src={`${basePath}/img/vet.jpg`} />
-							</div>
-							<div>
-								{/* <div className={styles.pillarNumber}>2</div> */}
-								<h3>Intervenir contre la maltraitance</h3>
-								<p>L'association intervient également en cas de mauvais traitements ou d'actes de cruauté sur des chats, et peut en poursuivre les auteurs en justice.</p>
-							</div>
-						</article>
-						<article className={styles.pillar}>
-							<div className="pillar-img--wrap">
-								<SmartImage src={`${basePath}/img/homeplace-2.jpg`} />
+								<SmartImage src={`${basePath}/img/food.jpg`} />
 							</div>
 							<div>
 								{/* <div className={styles.pillarNumber}>3</div> */}
 								<h3>Nourrir, abriter, veiller</h3>
 								<p>Nos bénévoles nourrissent quotidiennement environ 140 chats errants sur le territoire.</p>
+							</div>
+						</article>
+						<article className={styles.pillar}>
+							<div className="pillar-img--wrap">
+								<SmartImage src={`${basePath}/img/sad.jpg`} />
+							</div>
+							<div>
+								{/* <div className={styles.pillarNumber}>2</div> */}
+								<h3>Intervenir contre la maltraitance</h3>
+								<p>L'association intervient également en cas de mauvais traitements ou d'actes de cruauté sur des chats, et peut en poursuivre les auteurs en justice.</p>
 							</div>
 						</article>
 					</div>

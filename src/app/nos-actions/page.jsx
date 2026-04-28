@@ -57,7 +57,7 @@ export default function Actions() {
 
 						<div className={styles.chapterSide}>
 							{/* <span className="supertitle">Étape 2</span> */}
-							<h2>Stérilisation, soins et identifications</h2>
+							<h2>Stérilisation, tests et identifications</h2>
 							<div className={styles.chapterContent}>
 								<p>
 									Chaque chat capturé est stérilisé ou castré, testé pour les maladies transmissibles (FIV, leucose). Les animaux porteurs de maladies
