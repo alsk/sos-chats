@@ -60,7 +60,7 @@ export default function Actions() {
 							<h2>Stérilisation, soins et identifications</h2>
 							<div className={styles.chapterContent}>
 								<p>
-									Chaque chat capturé est stérilisé ou castré, identifié par puce électronique et testé pour les maladies transmissibles (FIV, leucose). Les animaux porteurs de maladies
+									Chaque chat capturé est stérilisé ou castré, testé pour les maladies transmissibles (FIV, leucose). Les animaux porteurs de maladies
 									incurables ne sont pas remis dans la nature : ils seraient un danger de contamination pour les autres, et malheureusement, une euthanasie est alors décidée.
 								</p>
 								<p>
@@ -71,10 +71,11 @@ export default function Actions() {
 								<aside className={styles.aside}>
 									<h4>Coûts vétérinaires pris en charge</h4>
 									<ul>
-										<li>Stérilisation d'une chatte : 68 €</li>
-										<li>Castration d'un chat : 39 €</li>
-										<li>Chatte gestante : 94 €</li>
-										<li>Tests FIV / leucose : 45 €</li>
+										<li>Stérilisation d'une chatte : 70 €</li>
+										<li>Stérilisation d'une chatte gestante : 96 €</li>
+										<li>Castration d'un chat : 41 €</li>
+										<li>Tests FIV / leucose : 25 €</li>
+										<li>Identification : 47 €</li>
 										<li>Euthanasie (si maladie incurable) : 21 €</li>
 									</ul>
 								</aside>
@@ -100,11 +101,10 @@ export default function Actions() {
 							</div>
 						</div>
 					</article>
-					<article className={styles.chapter}>
+					{/* <article className={styles.chapter}>
 						<SmartImage src={`${basePath}/img/homeplace-2.jpg`} />
 
 						<div className={styles.chapterSide}>
-							{/* <span className="supertitle">Étape 4</span> */}
 							<h2>Placements et adoptions</h2>
 							<div className={styles.chapterContent}>
 								<p>
@@ -117,7 +117,7 @@ export default function Actions() {
 								</p>
 							</div>
 						</div>
-					</article>
+					</article> */}
 					<article className={styles.chapter}>
 						<SmartImage src={`${basePath}/img/sad.jpg`} />
 

@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       <div className="guard footer-bottom">
-        <p>© {new Date().getFullYear()} SOS Chats Haute-Dordogne —  {new Date().getFullYear() - 2003} ans d&apos;engagement</p>
+        <p>© {new Date().getFullYear()} SOS Chats Haute-Dordogne —  {new Date().getFullYear() - 2004} ans d&apos;engagement</p>
         <p className="footer-reduction">Les dons donnent droit à un reçu fiscal.</p>
       </div>
     </footer>

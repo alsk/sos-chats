@@ -12,8 +12,8 @@ const missions = [
 		body: "Nous stérilisons les chats errants et ceux des personnes en difficulté pour briser le cycle de la reproduction incontrôlée.",
 	},
 	{
-		title: "Soigner",
-		body: "Nous assurons les soins post-opératoires, les traitements et, face à la maladie incurable, une fin de vie digne.",
+		title: "Nourrir",
+		body: "Nos bénévoles nourrissent quotidiennement environ 140 chats errants sur le territoire.",
 	},
 	{
 		title: "Protéger",
@@ -23,9 +23,9 @@ const missions = [
 
 const stats = [
 	{ value: "3 569", label: "Chats aidés depuis 2003" },
-	{ value: `${new Date().getFullYear() - 2003}`, label: "Années d'engagement" },
+	{ value: `${new Date().getFullYear() - 2004}`, label: "Années d'engagement" },
 	{ value: "140", label: "Chats errants nourris chaque jour" },
-	{ value: "343", label: "Placements en famille" },
+	// { value: "343", label: "Placements en famille" },
 ];
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
 
 						{/* <h3>SOS Chats Haute-Dordogne</h3> */}
 						<h1 className={styles.heroTitle}>
-							Pour les chats qui n&apos;ont <em>pas de foyer</em>, nous sommes là depuis {new Date().getFullYear() - 2003} ans.
+							Pour les chats qui n&apos;ont <em>pas de foyer</em>, nous sommes là depuis {new Date().getFullYear() - 2004} ans.
 						</h1>
 						<p className={styles.heroLead}>
 							SOS Chats Haute-Dordogne stérilise, soigne et place les chats errants du bassin de La Bourboule. Une association entièrement bénévole, reconnue d&apos;intérêt général.
@@ -125,8 +125,8 @@ export default function Home() {
 							</div>
 							<div>
 								{/* <div className={styles.pillarNumber}>2</div> */}
-								<h3>Soins et accompagnement</h3>
-								<p>Offrir des soins vétérinaires, assurer le nourrissage régulier et soutenir les familles en difficulté ou isolées souhaitant prendre soin des chats de leur quartier.</p>
+								<h3>Intervenir contre la maltraitance</h3>
+								<p>L'association intervient également en cas de mauvais traitements ou d'actes de cruauté sur des chats, et peut en poursuivre les auteurs en justice.</p>
 							</div>
 						</article>
 						<article className={styles.pillar}>
@@ -135,8 +135,8 @@ export default function Home() {
 							</div>
 							<div>
 								{/* <div className={styles.pillarNumber}>3</div> */}
-								<h3>Placement et protection</h3>
-								<p>Placer les chats sociables en famille d’accueil ou les proposer à l’adoption, intervenir contre la maltraitance et promouvoir le respect des animaux dans la société.</p>
+								<h3>Nourrir, abriter, veiller</h3>
+								<p>Nos bénévoles nourrissent quotidiennement environ 140 chats errants sur le territoire.</p>
 							</div>
 						</article>
 					</div>
@@ -152,7 +152,7 @@ export default function Home() {
 				<div className={`guard flex stack-mobile cta-inner`}>
 					<div>
 						<h2>Chaque geste peut nous aider</h2>
-						<p className="margin-top-sm mw-30">Un don de 68 € couvre une stérilisation complète. Un sac de croquettes de 20 kg nourrit une colonie pendant deux semaines. Chaque geste compte.</p>
+						<p className="margin-top-sm mw-30">Un don de 70 € couvre une stérilisation complète. Un sac de croquettes de 20 kg nourrit une colonie pendant deux semaines. Chaque geste compte.</p>
 					</div>
 					<div className='cta-actions'>
 						<Link href="/nous-aider#don" className="button primary on-dark">

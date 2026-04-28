@@ -31,7 +31,7 @@ export default function Contact() {
 					<span className="supertitle">Contact</span>
 					<h1>Parlons-en.</h1>
 					<p className="mw-40 margin-top-sm">
-						Vous avez repéré un chat errant, souhaitez adopter, faire un don ou signaler une situation de maltraitance ? N&apos;hésitez pas à nous joindre — nous répondons à chaque appel.
+						Vous avez repéré un chat errant, faire un don ou signaler une situation de maltraitance ? N&apos;hésitez pas à nous joindre — nous répondons à chaque appel.
 					</p>
 				</div>
 			</section>
@@ -57,7 +57,11 @@ export default function Contact() {
 							<address className={styles.address}>
 								SOS Chats Haute-Dordogne
 								<br />
-								BP 21, 63150 La Bourboule
+								Mairie de Murat-le-Quaire
+								<br />
+								Service Trésorerie
+								<br />
+								63150 Murat-le-Quaire
 							</address>
 							<p className={styles.note}>Les chèques sont à libeller à l&apos;ordre de « SOS Chats Haute-Dordogne ».</p>
 						</div>

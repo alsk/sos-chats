@@ -20,7 +20,7 @@ const ways = [
     title: "Faire un don",
     icon: "€",
     body:
-      "Chaque euro sert directement au terrain : stérilisations, croquettes, frais vétérinaires. Envoyez votre chèque à l'ordre de « SOS Chats Haute-Dordogne », BP 21, 63150 La Bourboule. Un reçu fiscal vous sera systématiquement envoyé.",
+      "Chaque euro sert directement au terrain : stérilisations, croquettes, frais vétérinaires. Envoyez votre chèque à l'ordre de « SOS Chats Haute-Dordogne », SOS Chats Haute-Dordogne, Service Trésorerie, 63150 Murat-le-Quaire. Un reçu fiscal vous sera systématiquement envoyé. N'oubliez pas que votre don ouvre droit à 66% de réduction fiscale !",
     accent: true,
   },
   {
@@ -35,15 +35,15 @@ const ways = [
     title: "Adhérer à l'association",
     icon: "✎",
     body:
-      "Devenir adhérent, c'est nous aider à peser auprès des communes et des partenaires. Nous demandons simplement votre adresse et, si possible, votre e-mail pour faciliter les échanges.",
+      "Devenir adhérent, c'est nous aider à peser auprès des communes et des partenaires. Nous demandons simplement votre adresse et, si possible, votre e-mail pour faciliter les échanges. Une participation de 30 € vous sera demandée. Si vos ressources ne le permettent pas, une participation moindre peut être acceptée. Un reçu fiscal vous sera délivré.",
   },
-  {
-    id: "adoption",
-    title: "Adopter un chat",
-    icon: "❤",
-    body:
-      "Nous plaçons chaque année une quinzaine de chats stérilisés et identifiés. Si vous souhaitez ouvrir votre foyer, appelez-nous pour rencontrer les chats actuellement à l'adoption.",
-  },
+  // {
+  //   id: "adoption",
+  //   title: "Adopter un chat",
+  //   icon: "❤",
+  //   body:
+  //     "Nous plaçons chaque année une quinzaine de chats stérilisés et identifiés. Si vous souhaitez ouvrir votre foyer, appelez-nous pour rencontrer les chats actuellement à l'adoption.",
+  // },
   {
     id: "nourrir",
     title: "Nourrir une colonie",
@@ -56,16 +56,17 @@ const ways = [
     title: "Devenir bénévole",
     icon: "✋",
     body:
-      "Piégeage, transports chez le vétérinaire, nourrissage, couture de coussins : chaque paire de mains est précieuse. Contactez-nous pour rejoindre notre équipe.",
+      "Piégeage, transports chez le vétérinaire, nourrissage : chaque paire de mains est précieuse. Contactez-nous pour rejoindre notre équipe.",
   },
 ];
 
 const tariffs = [
-  { label: "Stérilisation d'une chatte", value: "68 €" },
-  { label: "Castration d'un chat", value: "39 €" },
-  { label: "Chatte gestante", value: "94 €" },
-  { label: "Tests FIV / leucose", value: "45 €" },
-  { label: "Identification par puce", value: "45 €" },
+  { label: "Stérilisation d'une chatte", value: "70 €" },
+  { label: "Stérilisation d'une chatte gestante", value: "96 €" },
+  { label: "Castration d'un chat", value: "41 €" },
+  { label: "Tests FIV / leucose", value: "25 €" },
+  { label: "Identification par puce", value: "47 €" },
+  { label: "Euthanasie (si maladie incurable)", value: "21 €" },
 ];
 
 export default function Aider() {

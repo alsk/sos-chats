@@ -37,7 +37,7 @@ export const metadata = {
   openGraph: {
     title: "SOS Chats Haute-Dordogne",
     description:
-      "22 ans au service des chats errants : stérilisation, soins, placement et lutte contre la maltraitance.",
+      `${new Date().getFullYear() - 2003} ans au service des chats errants : stérilisation, soins, placement et lutte contre la maltraitance.`,
     type: "website",
     locale: "fr_FR",
   },
