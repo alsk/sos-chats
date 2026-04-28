@@ -9,6 +9,7 @@
     "optimize": "node scripts/optimize-images.js"
   },
   "dependencies": {
+    "@plausible-analytics/tracker": "^0.4.4",
     "next": "16.2.4",
     "next-plausible": "^4.0.0",
     "react": "19.2.4",
