@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${inter.variable} ${fraunces.variable}`} data-scroll-behavior="smooth">
       <head>
-        {/* <PlausibleProvider src="https://plausible.io/js/pa-XXXXX.js" /> */}
+        <PlausibleProvider src="https://plausible.io/js/pa-6clx19siYp8S59ERoCif-.js" />
       </head>
       <body>
         <Header />
