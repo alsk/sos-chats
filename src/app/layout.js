@@ -1,3 +1,6 @@
+import PlausibleProvider from 'next-plausible'
+
+
 import { Inter, Fraunces } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -46,6 +49,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${inter.variable} ${fraunces.variable}`} data-scroll-behavior="smooth">
+      <head>
+        <PlausibleProvider domain="sos-chats-haute-dordogne.fr" />
+      </head>
       <body>
         <Header />
         <main>{children}</main>
